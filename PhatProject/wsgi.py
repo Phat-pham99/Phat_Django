@@ -1,5 +1,5 @@
 """
-WSGI config for PhatApp project.
+WSGI config for PhatProject project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "PhatApp.settings")
+os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                    'PhatProject.settings')
 
 application = get_wsgi_application()
