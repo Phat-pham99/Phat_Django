@@ -12,6 +12,7 @@ python = "^3.12"
 django = "^5.2"
 djangorestframework = "^3.16.0"
 django-filter = "^25.1"
+posting = "^2.6.0"
 
 [build-system]
 requires = ["poetry-core"]
