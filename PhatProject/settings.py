@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'PhatApp.apps.PhatappConfig'
+    'django.contrib.sites',
+    'rest_framework',
+    'PhatApp.apps.PhatappConfig',
+    'Accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +124,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Sessions management
+# SESSION_COOKIE_AGE = 30  # 30 minutes
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_SAVE_EVERY_REQUEST = False  # Change to True if you want to extend on every request

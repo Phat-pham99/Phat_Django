@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .cat-meme {
+            margin: 20px 0;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Django App</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'signup' %}" style="color: white;">Sign Up</a></li>
+                <li><a href="{% url 'login' %}" style="color: white;">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <p>This is the home page of your Django application.</p>
+        
+        <h3>Enjoy Some Cat Memes!</h3>
+        <div class="cat-meme">
+            <img src="https://www.worldsbestcatlitter.com/wp-content/uploads/2019/12/02_coughing-cat-meme.jpg"
+             alt="Funny Cat Meme 1" 
+             class="img-fluid"
+             width="500" height="600">
+            <p>When you realize it's Monday again...</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Django App</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

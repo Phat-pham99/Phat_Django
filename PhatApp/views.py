@@ -1,13 +1,18 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect,JsonResponse
 from .models import Expenses,Investments,Investment_tracking
 from .utils.utils import format_decimal
 
+@login_required
+def home(request):
+    return render(request, 'home.html')
+
 def index(request):
-    return HttpResponseRedirect(redirect_to="https://phatpham.work")
+    return HttpResponse("<h1>Hello World !</h1>")
 
 def redirect(request):
-    pass
+    return HttpResponseRedirect(redirect_to="https://phatpham.work")
 
 def get_expenses(request):
     pass
